@@ -1,0 +1,45 @@
+.hidden {
+    display: none;
+  }
+
+.checked {
+  text-decoration: line-through;
+}
+
+.todo-list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu {
+  list-style: none;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: rgba(150,150,150,0.5);
+  cursor: pointer;
+}
+
+.menuBtn {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuBtn:hover {
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.menu {
+  background-color: grey;
+  position: absolute;
+  top: 20px;
+  left:20px;
+}

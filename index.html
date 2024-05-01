@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login practice</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="greeting" class="hidden"></h1>
+    <h2 class="clock">00:00</h2>
+    <div class="form">
+      <form id="login-form">
+        <input
+          minlength="2"
+          maxlength="10"
+          required
+          type="text"
+          placeholder="Username"
+        />
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <form class="todo-form">
+      <label for="todos">What is your main goal for today?</label>
+      <input type="text" id="todos" />
+    </form>
+    <div class="list hidden">
+      <h4>TODAY</h4>
+      <ul>
+        <li class="todo-list">
+          <input id="check" type="checkbox" class="hidden" />
+          <p class="todo"></p>
+          <div class="menuBtn hidden">
+            <i class="fa-solid fa-ellipsis"></i>
+            <ul class="menu hidden">
+              <li class="edit-list">edit</li>
+              <li class="clear-list">clear</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="quote-container">
+      <span class="quote"></span>
+      <span class="author"></span>
+    </div>
+    <script src="todo.js"></script>
+    <script src="greetings.js"></script>
+    <script src="clock.js
+    "></script>
+    <script src="quote.js"></script>
+    <script
+      src="https://kit.fontawesome.com/539a26ecda.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
